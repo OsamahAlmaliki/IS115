@@ -29,7 +29,7 @@
     $b = new Bruker;
     echo $b->admin; //Ikke tillatt
     echo $b->admin = true; //Ikke tillatt
-    echo $b->admin(); //Ikke tillatt
+    //echo $b->admin(); //Ikke tillatt
     echo $b->fullt_navn(); //Tillatt
 
     $m = new Medlem;
