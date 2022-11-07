@@ -47,24 +47,24 @@
         }
     }
     echo "Student 1: <br>";
-    $student1 = new Student("Osamah", "Al-maliki");
-    $brukernavn = $student1->hentBrukernavn();
-    $student1->hentStudentInfo();
+    $student1 = new Student("Osamah", "Al-maliki"); //Oppretter objekt
+    $brukernavn = $student1->hentBrukernavn(); //Henter brukernavn
+    $student1->hentStudentInfo(); 
 
     echo "<br>";
 
     echo "Student 2: <br>";
-    $student2 = new Student("Ole", "Doffen");
-    $brukernavn2 = $student2->hentBrukernavn();
-    $student2->hentStudentInfo();
+    $student2 = new Student("Ole", "Doffen"); 
+    $brukernavn2 = $student2->hentBrukernavn(); 
+    $student2->hentStudentInfo(); 
 
     echo "<br>";
 
-    $slettet1 = $student1->__destruct();
+    $slettet1 = $student1->__destruct(); //Sletter objekt
     $slettet2 = $student2->__destruct();
 
-    $slettet = array($slettet1, $slettet2);
+    $slettet = array($slettet1, $slettet2); //Slettet objekt i en matrise
 
     echo "De slettede brukerne er: ";
-    print_r($slettet);
+    print_r($slettet); //Printer ut slettede objekter
 ?>
